@@ -6,4 +6,4 @@ Pedir dos números por teclado y mostrar en una alerta todos las operaciones pos
 
 · Tras mostrar todas las operaciones se pedirá confirmación al usuario para que indique si quiere continuar realizando operaciones: en caso positivo el programa volverá a empezar. En caso negativo el programa parará
 
-· Si se detecta que alguna de las operaciones es negativa
+· Si se detecta que alguna de las operaciones es negativa el programa parará tras realizar todas las operaciones de los números
