@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operaciones Recurrentes 1</title>
+  </head>
+  <body>
+    <script>
+      let num1 = Number(prompt("Introduce el primer número: "));
+      let num2 = Number(prompt("Introduce el segundo número: "));
+      function suma(num1, num2) {
+        return num1 + num2;
+      }
+      function resta(num1, num2) {
+        return num1 - num2;
+      }
+      function multiplicacion(num1, num2) {
+        return num1 * num2;
+      }
+      function division(num1, num2) {
+        return num1 / num2;
+      }
+      let condicion = confirm("Quieres mostrar el resultado?");
+      if (condicion) {
+        console.log(`Suma: ${suma(num1, num2)}`);
+        setTimeout(() => console.log(`Resta: ${resta(num1, num2)}`), 2000);
+        setTimeout(() => console.log(`Multiplicación: ${multiplicacion(num1, num2)}`), 4000);
+        setTimeout(() => console.log(`División: ${division(num1, num2)}`), 6000);
+      }
+    </script>
+  </body>
+</html>
