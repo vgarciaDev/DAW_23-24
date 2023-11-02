@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Pirámide</title>
+  </head>
+  <body>
+    <script>
+      let numero = parseInt(prompt("Cuantas filas quieres que aparezca:"));
+      let asterisco = "*";
+      while (isNaN(numero) || numero < 0) {
+        alert("Dato introducido no válido");
+        numero = parseInt(prompt("Cuantas filas quieres que aparezca:"));
+      }
+      console.log(`Cuantas filas quieres que aparezca: ${numero}`);
+      for (let i = 0; i < numero; i++) {
+        console.log(asterisco);
+        asterisco += "*";
+      }
+    </script>
+  </body>
+</html>
