@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Frase</title>
+  </head>
+  <body>
+    <script>
+      let frase = prompt("Introduce una frase: ");
+      if (frase.length < 10) {
+        alert("La frase tiene menos de 10 letras");
+        frase = prompt("Introduce una frase más larga: ");
+      }
+      let letras = frase.split(" ").join("").length; //Formo un array con las palabras split(" "), uno las palabras del array a un string join("") y cuento las letras del string.
+      let palabras = frase.split(" ").length;
+      alert(`La frase introducida tiene:\n${letras} Letras\n${palabras} Palabras\n1 Frase`);
+    </script>
+  </body>
+</html>
