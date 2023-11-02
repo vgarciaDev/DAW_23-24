@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diferencia de fechas</title>
+  </head>
+  <body>
+    <script>
+      let dia = Number(prompt("Introduce el día de tu cumpleaños: "));
+      let mes = Number(prompt("Introduce el mes de tu cumpleaños: ")) - 1; //Los meses los toma como un array, por lo que irán del 0 al 11.
+      let año = Number(prompt("Introduce el año de tu cumpleaños: "));
+      let hoy = new Date();
+      let cumpleaños = new Date(año, mes, dia);
+      let msPorDia = 24 * 60 * 60 * 1000; // Al hacer la diferencia Js devuelve los milisegundos de diferencia entre una fecha y otra. 1000ms x 60s x 60min x 24h. (Ms de un día);
+      let diferencia = Math.floor((hoy - cumpleaños) / msPorDia);
+      if (diferencia == 0) {
+        console.log("Hoy es tu cumpleaños, FELICIDADES! :)");
+      } else if (diferencia > 0) {
+        console.log(`Han pasado ${diferencia} días desde tu cumpleaños.`);
+      } else if (diferencia < 0) {
+        console.log(`Quedan ${-diferencia} días para tu cumpleaños.`);
+      }
+    </script>
+  </body>
+</html>
