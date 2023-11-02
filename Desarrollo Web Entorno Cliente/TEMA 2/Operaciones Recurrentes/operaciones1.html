@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operaciones Recurrentes 1</title>
+  </head>
+  <body>
+    <script>
+      let num1 = Number(prompt("Introduce el primer número: "));
+      let num2 = Number(prompt("Introduce el segundo número: "));
+      function suma(num1, num2) {
+        return num1 + num2;
+      }
+      function resta(num1, num2) {
+        return num1 - num2;
+      }
+      function multiplicacion(num1, num2) {
+        return num1 * num2;
+      }
+      function division(num1, num2) {
+        return num1 / num2;
+      }
+
+      alert(
+        `Suma: ${suma(num1, num2)}\nResta: ${resta(num1, num2)}\nMultiplicacion: ${multiplicacion(
+          num1,
+          num2
+        )}\nDivisión: ${division(num1, num2)}`
+      );
+    </script>
+  </body>
+</html>
