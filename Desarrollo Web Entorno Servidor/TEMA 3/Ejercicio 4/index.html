@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4</title>
+    <style>
+      table th {
+        text-align: left;
+      }
+      form input[type="number"]{
+        width: 50px;
+      }
+      form input[type="checkbox"]{
+        margin: 5px;
+      }
+      button{
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Ejercicio formulario completo. Comprobar que todos los campos estén rellenos y mostrarlo en otra pagina:</h3>
+    <form action="formulario.php" method="POST">
+      <table>
+        <tr>
+          <th><label for="nombre">Nombre: </label></th>
+          <th><label for="apellidos">Apellidos: </label></th>
+          <th><label for="edad">Edad:</label></th>
+        </tr>
+        <tr>
+          <td><input type="text" name="nombre" id="nombre" /></td>
+          <td><input type="text" name="apellidos" id="apellidos" /></td>
+          <td>
+            <select name="edad" id="edad">
+                <option value="1">Entre 18 y 29 años</option>
+                <option value="2">Entre 30 y 39 años</option>
+                <option value="3">Entre 40 y 60 años</option>
+                <option value="4">Más de 60 años</option>
+            </select>
+            </option>
+          </td>
+        </tr>
+        <tr>
+            <th><label for="peso">Peso:</label></th>
+            <th><label for="genero">Género:</label></th>
+            <th><label for="estado">Estado Civil:</label></th>
+        </tr>
+        <tr>
+            <td><input type="number" name="peso" id="peso"> Kg</td>
+            <td><input type="radio" name="genero" id="genero" value="h">Hombre <input type="radio" name="genero" id="genero" value="m">Mujer <input type="radio" name="genero" id="genero" value="o">Otro</td>
+            <td><input type="radio" name="estado" id="estado" value="s">Soltero <input type="radio" name="estado" id="estado" value="c">Casado <input type="radio" name="estado" id="estado" value="o">Otro</td>
+        </tr>
+        <tr>
+            <th rowspan="2"><label for="aficiones">Aficiones:</label></th>
+            <td><input type="checkbox" name="aficiones[]" id="aficiones" value="el cine">Cine</td>
+            <td><input type="checkbox" name="aficiones[]" id="aficiones" value="la literatura">Literatura</td>
+            <td><input type="checkbox" name="aficiones[]" id="aficiones" value="los tebeos">Tebeos</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="aficiones[]" id="aficiones" value="el deporte">Deporte</td>
+            <td><input type="checkbox" name="aficiones[]" id="aficiones" value="la música">Música</td>
+            <td><input type="checkbox" name="aficiones[]" id="aficiones" value="la televisión">Televisión</td>
+        </tr>
+      </table>
+      <button type="submit">Enviar</button><button type="reset">Borrar</button>
+    </form>
+    
+  </body>
+</html>
