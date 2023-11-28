@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Víctor García García" />
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="./utils/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
+    <script type="module" src="./utils/js/carta.js"></script>
+  </head>
+  <body id="body">
+    <div class="baraja">
+      <div class="baraja1">
+        <img src="./utils/images/images/red_back.png" alt="" />
+      </div>
+      <div class="baraja2">
+        <img src="./utils/images/images/red_back.png" alt="" />
+      </div>
+      <div class="baraja3">
+        <img src="./utils/images/images/red_back.png" alt="" />
+      </div>
+      <div class="baraja4">
+        <img src="./utils/images/images/red_back.png" alt="" />
+      </div>
+    </div>
+    <div class="contenedor-cartas-banca"></div>
+    <div class="contenedor-cartas-jugador"></div>
+    <div id="cartas-banca"></div>
+    <div id="cartas-jugador"></div>
+    <div class="marcador-banca">
+      <h2 id="marcador-banca"></h2>
+    </div>
+    <div class="marcador-jugador">
+      <h2 id="marcador-jugador"></h2>
+    </div>
+    <div class="botones">
+      <button class="boton" id="pedir">Pedir Carta</button>
+      <button class="boton" id="plantar">Plantarse</button>
+    </div>
+    <div class="puntuacion-final">
+      <h2 id="puntuacion-final"></h2>
+    </div>
+
+    <script type="module" src="./utils/js/script.js"></script>
+  </body>
+</html>
