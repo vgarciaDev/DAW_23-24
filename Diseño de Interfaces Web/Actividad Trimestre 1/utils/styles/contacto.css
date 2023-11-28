@@ -1,0 +1,88 @@
+.titulo-contacto {
+  margin: 50px auto auto auto;
+  text-decoration: overline;
+  width: 70%;
+}
+
+.datos-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 35px auto auto auto;
+  width: 65%;
+}
+
+.datos-contacto iframe {
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.datos {
+  color: #fff;
+}
+
+.datos a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.formulario {
+  background-color: #32a8a0;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  margin: auto;
+  padding: 20px;
+  width: 35%;
+  color: #fff;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  margin: 15px;
+  padding: 5px;
+  width: 90%;
+}
+
+textarea {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  height: 100px;
+  margin: 15px;
+  padding: 5px;
+  width: 90%;
+}
+
+input:hover,
+textarea:hover {
+  background-color: white;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 10px #1c5c58;
+}
+
+input:focus,
+textarea:focus {
+  background-color: white;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 10px #1c5c58;
+}
+
+button {
+  background-color: #1c5c58;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 55px;
+}
+
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
