@@ -1,0 +1,4 @@
+Realiza una aplicación que tenga tres input de tipo range cuyos valores vayan de 0 a 255, un párrafo con un tamaño de 400px 400px 
+y texto que inicialmente aparece en vacío. La funcionalidad de la aplicación será la siguiente:
+- Cuando uno de los range sea movido se pondrá el color correspondiente al sistema rgb
+- Adicionalmente, en el texto se pondrá el valor rgb de los tres range de la siguiente manera RGB : 233 / 241 / 123

@@ -1,0 +1,5 @@
+Realiza una aplicación web que simule el funcionamiento de una calculadora. 
+
+En la parte de la izquierda aparecerá la interfaz de la calculadora con las operaciones + - * / = y una tecla para borrar. 
+
+En la parte de la derecha aparecerá una lista con todas las operaciones realizadas, donde se irán agregando cada vez que se pulsa el =.

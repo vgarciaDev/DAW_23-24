@@ -1,0 +1,1 @@
+Usando un input de tipo date, permitir seleccionar una fecha, y que el color de fondo que hay en la página cambien para indicar la estación del año de la fecha

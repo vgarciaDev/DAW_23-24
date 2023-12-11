@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="pagina">
+      <div class="calculadora">
+        <h2>Calculadora</h2>
+        <div class="contenedor">
+          <textarea class="item1" name="resultado" id="resultado" cols="4" rows="1" contenteditable="false" readonly="true"></textarea>
+          <button class="item17">CE</button>
+          <button class="item18">C</button>
+          <button class="item2 numero" value="7">7</button>
+          <button class="item3 numero" value="8">8</button>
+          <button class="item4 numero" value="9">9</button>
+          <button class="item5">/</button>
+          <button class="item6 numero" value="4">4</button>
+          <button class="item7 numero" value="5">5</button>
+          <button class="item8 numero" value="6">6</button>
+          <button class="item9">*</button>
+          <button class="item10 numero" value="1">1</button>
+          <button class="item11 numero" value="2">2</button>
+          <button class="item12 numero" value="3">3</button>
+          <button class="item13">-</button>
+          <button class="item14 numero" value="0">0</button>
+          <button class="item15">+</button>
+          <button class="item16">=</button>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <h2>Operaciones Realizadas</h2>
+        <ol id="operaciones"></ol>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

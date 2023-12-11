@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colores</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>RED</th>
+        <th>GREEN</th>
+        <th>BLUE</th>
+      </tr>
+      <tr id="rangos">
+        <td><input type="range" name="r" id="r" min="0" max="255" style="width: 255px" step="1" /></td>
+        <td><input type="range" name="g" id="g" min="0" max="255" style="width: 255px" step="1" /></td>
+        <td><input type="range" name="b" id="b" min="0" max="255" style="width: 255px" step="1" /></td>
+      </tr>
+    </table>
+
+    <p id="contenedor" style="height: 400px; width: 400px; border: 1px solid black"></p>
+    <script src="script.js"></script>
+  </body>
+</html>
