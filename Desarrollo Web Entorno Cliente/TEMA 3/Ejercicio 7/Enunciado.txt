@@ -1,0 +1,8 @@
+Formulario usuario, con elementos de introducción de datos donde al pulsar el boton añadir se guardan todos los campos en local storage
+Modificar el ejercicio anterior para que la aplicacion conste de:
+
+- Una página de introducción de usuarios donde aparece el formulario para meter todos los datos.
+Cuando se agrega un usuario se almacena en un objeto y este a su vez en un array
+
+- Una página donde se muestra una lista de todos los usuarios que están guardados en el almacenamiento local. 
+Los usuarios deberán ser mostrados cuando se termina la carga de la página
