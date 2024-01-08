@@ -1,0 +1,135 @@
+@import "_reset.scss";
+@import "_variables.scss";
+
+//MIXIN
+@mixin box-shadow($eje-x, $eje-y, $dispersion, $color) {
+  box-shadow: $eje-x $eje-y $dispersion $color;
+}
+
+body {
+  margin: $m;
+  //CONDICIONAL
+  @if $theme == light {
+    h1 {
+      color: $color-principal;
+      font-size: $tamaño-fuente-h1;
+      margin: $mt $mr $mb $ml;
+    }
+
+    //ANIDAMIENTO
+    .container {
+      display: flex;
+      justify-content: space-around;
+      margin: $mt + 30px auto $mb + 30px auto; //OPERADOR
+      width: 100% - 25%; //OPERADOR
+      .card {
+        background-color: $color-principal;
+        border-radius: $mt;
+        @include box-shadow(10px, 10px, 5px, rgba(0, 0, 0, 0.514));
+        margin: $mt $mr $mb $ml;
+        padding: $mt + 5px; //OPERADOR
+        width: 450px;
+        h2 {
+          color: $color-secundario;
+          font-size: $tamaño-fuente-h2;
+        }
+        p {
+          font-size: $tamaño-fuente-p;
+          color: $color-secundario;
+        }
+      }
+    }
+
+    //ANIDAMIENTO
+    nav {
+      ul {
+        background-color: $color-secundario;
+        display: flex;
+        justify-content: space-around;
+        margin: $m;
+        padding: 0px;
+        li {
+          list-style: none;
+          a {
+            color: $color-principal;
+            text-decoration: none;
+          }
+        }
+      }
+      margin-bottom: $m;
+    }
+
+    //ANIDAMIENTO
+    footer {
+      background-color: $color-principal;
+      @include box-shadow(0px, 10px, 5px, rgba(0, 0, 0, 0.356));
+      p {
+        color: $color-secundario;
+        margin: $m;
+        padding: $mt + 5px; //OPERADOR
+        text-align: center;
+      }
+    }
+  } @else if $theme == dark {
+    background-color: $color-principal;
+    h1 {
+      color: $color-secundario;
+      font-size: $tamaño-fuente-h1;
+      margin: $mt $mr $mb $ml;
+    }
+    //ANIDAMIENTO
+    .container {
+      display: flex;
+      justify-content: space-around;
+      margin: $mt + 30px auto $mb + 30px auto;
+      width: 100% - 25%; //OPERADOR
+      .card {
+        background-color: $color-secundario;
+        border-radius: $mt;
+        @include box-shadow(10px, 10px, 5px, rgba(0, 0, 0, 0.514));
+        margin: $mt $mr $mb $ml;
+        padding: $mt + 5px; //OPERADOR
+        width: 450px;
+        h2 {
+          color: $color-principal;
+          font-size: $tamaño-fuente-h2;
+        }
+        p {
+          font-size: $tamaño-fuente-p;
+          color: $color-principal;
+        }
+      }
+    }
+
+    //ANIDAMIENTO
+    nav {
+      ul {
+        background-color: darken($color-principal, 2%);
+        display: flex;
+        justify-content: space-around;
+        margin: $m;
+        padding: 0px;
+        li {
+          list-style: none;
+          a {
+            color: $color-secundario;
+            text-decoration: none;
+          }
+        }
+      }
+      margin-bottom: $m;
+    }
+
+    //ANIDAMIENTO
+    footer {
+      background-color: $color-secundario;
+      @include box-shadow(0px, 10px, 5px, rgba(0, 0, 0, 0.356));
+      p {
+        color: $color-principal;
+        margin: $m;
+        padding: $mt + 5px; //OPERADOR
+        text-align: center;
+      }
+    }
+  }
+}

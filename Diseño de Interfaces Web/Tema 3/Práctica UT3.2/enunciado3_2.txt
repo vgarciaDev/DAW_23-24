@@ -1,0 +1,9 @@
+Crea un conjunto de estilos utilizando Sass para una página web de blog. Deberías incluir al menos las siguientes características:
+
+Define variables para colores principales, tamaños de fuente y márgenes.
+Utiliza anidamiento para organizar tus estilos de manera clara.
+Crea un mixin para la regla box-shadow y úsalo en al menos dos lugares diferentes.
+Utiliza operadores para realizar operaciones matemáticas en al menos una propiedad.
+Crea un archivo parcial _reset.scss que contenga estilos para restablecer los márgenes y rellenos predeterminados.
+Utiliza condicionales para ajustar el tema del blog. Define una variable $theme y ajusta los colores y estilos según el tema seleccionado.
+Importa todos tus archivos parciales en un archivo principal llamado styles.scss.

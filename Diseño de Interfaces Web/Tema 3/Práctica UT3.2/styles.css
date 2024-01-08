@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+}
+body h1 {
+  color: #004a57;
+  font-size: 45px;
+  margin: 25px 15px 25px 15px;
+}
+body .container {
+  display: flex;
+  justify-content: space-around;
+  margin: 55px auto 55px auto;
+  width: 75%;
+}
+body .container .card {
+  background-color: #004a57;
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.514);
+  margin: 25px 15px 25px 15px;
+  padding: 30px;
+  width: 450px;
+}
+body .container .card h2 {
+  color: #5da3be;
+  font-size: 30px;
+}
+body .container .card p {
+  font-size: 20px;
+  color: #5da3be;
+}
+body nav {
+  margin-bottom: 0px;
+}
+body nav ul {
+  background-color: #5da3be;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px;
+  padding: 0px;
+}
+body nav ul li {
+  list-style: none;
+}
+body nav ul li a {
+  color: #004a57;
+  text-decoration: none;
+}
+body footer {
+  background-color: #004a57;
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.356);
+}
+body footer p {
+  color: #5da3be;
+  margin: 0px;
+  padding: 30px;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
