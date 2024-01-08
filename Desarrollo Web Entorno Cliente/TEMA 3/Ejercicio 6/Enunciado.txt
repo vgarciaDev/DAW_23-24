@@ -1,0 +1,5 @@
+Realiza una aplicacion web que simule el funcionamiento de un conversor de pesos, medidas y/o temperaturas. 
+
+Se debería poder ingresar valor en un input (por ejemplo dólar) y seleccionar cual es el dato destino (por ejemplo euro). 
+
+Tras pulsar el boton convertir se mostrará el resultado en una lista (con todas las conversiones previamente realizadas)
