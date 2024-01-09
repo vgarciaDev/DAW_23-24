@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WebStorage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style="background-color: #e5d4ce">
+    <div class="container">
+      <h1 class="mt-5">WebStorage</h1>
+      <div class="row">
+        <div class="col columna-1">
+          <h2>Local Storage</h2>
+          <div class="individual">
+            <h3 class="mt-5">Individual</h3>
+            <label for="clave-local">Clave</label><br />
+            <input class="form-control" type="text" name="clave-local" id="clave-local" />
+            <br />
+            <label for="valor-local">Valor</label><br />
+            <input class="form-control" type="text" name="valor-local" id="valor-local" />
+            <br />
+            <button type="button" class="btn btn-primary" id="agregar-par">Agregar Par</button>
+          </div>
+          <div class="objeto">
+            <h2 class="mt-5">Objeto</h2>
+            <label for="nombre-local">Nombre</label><br />
+            <input class="form-control" type="text" name="nombre-local" id="nombre-local" /><br />
+            <label for="apellido-local">Apellido</label><br />
+            <input class="form-control" type="text" name="apellido-local" id="apellido-local" /><br />
+            <label for="telefono-local">Teléfono</label><br />
+            <input class="form-control" type="number" name="telefono-local" id="telefono-local" /><br />
+            <label class="me-4" for="disponibilidad-local">Disponibilidad</label>
+            <input class="form-check-input" type="checkbox" name="disponibilidad-local" id="disponibilidad-local" />
+            <br /><br />
+            <button type="button" class="btn btn-primary" id="agregarObjeto">Agregar Objeto</button>
+          </div>
+          <div class="borrar">
+            <h2 class="mt-5">Borrar</h2>
+            <label for="borrar-local">Selecciona una clave</label><br />
+            <select class="form-select" name="borrar-local" id="borrar-local"></select>
+            <br />
+            <button type="button" class="btn btn-primary" id="borrarClaveLocal">Borrar Objeto</button>
+          </div>
+        </div>
+        <div class="col columna-2">
+          <h2>Session Storage</h2>
+          <div class="individual">
+            <h3 class="mt-5">Individual</h3>
+            <label for="clave-sesion">Clave</label><br />
+            <input class="form-control" type="text" name="clave-sesion" id="clave-sesion" />
+            <br />
+            <label for="valor-sesion">Valor</label><br />
+            <input class="form-control" type="text" name="valor-sesion" id="valor-sesion" />
+            <br />
+            <button type="button" class="btn btn-primary" id="agregar-par-sesion">Agregar Par</button>
+          </div>
+          <div class="objeto">
+            <h2 class="mt-5">Objeto</h2>
+            <label for="nombre-sesion">Nombre</label><br />
+            <input class="form-control" type="text" name="nombre-sesion" id="nombre-sesion" /><br />
+            <label for="apellido-sesion">Apellido</label><br />
+            <input class="form-control" type="text" name="apellido-sesion" id="apellido-sesion" /><br />
+            <label for="telefono-sesion">Teléfono</label><br />
+            <input class="form-control" type="number" name="telefono-sesion" id="telefono-sesion" /><br />
+            <label class="me-4" for="disponibilidad-sesion">Disponibilidad</label>
+            <input class="form-check-input" type="checkbox" name="disponibilidad-sesion" id="disponibilidad-sesion" />
+            <br /><br />
+            <button type="button" class="btn btn-primary" id="agregarObjetoSesion">Agregar Objeto</button>
+          </div>
+          <div class="borrar">
+            <h2 class="mt-5">Borrar</h2>
+            <label for="borrar-sesion">Selecciona una clave</label><br />
+            <select class="form-select" name="borrar-sesion" id="borrar-sesion">
+              <option value=""></option>
+            </select>
+            <br />
+            <button type="button" class="btn btn-primary mb-3" id="borrarClaveSesion">Borrar Objeto</button>
+          </div>
+        </div>
+        <div class="col columna-3">
+          <h2>Cookies</h2>
+          <div class="cookies-insertar mt-5">
+            <label for="clave-cookies">Clave</label><br />
+            <input class="form-control" type="text" name="clave-cookies" id="clave-cookies" />
+            <br />
+            <label for="valor-cookies">Valor</label><br />
+            <input class="form-control" type="text" name="valor-cookies" id="valor-cookies" />
+            <br />
+            <label for="expiracion-cookies">Expiracion (en días)</label><br />
+            <input class="form-control" type="text" name="expiracion-cookies" id="expiracion-cookies" />
+            <br />
+            <button type="button" class="btn btn-primary" id="agregar-cookies">Agregar</button>
+          </div>
+
+          <div class="borrar">
+            <h2 class="mt-5">Borrar</h2>
+            <label for="borrar-cookies">Selecciona una clave</label><br />
+            <select class="form-select" name="borrar-cookies" id="borrar-cookies">
+              <option value=""></option>
+            </select>
+            <br />
+            <button type="button" class="btn btn-primary" id="borrarCookies">Borrar Objeto</button>
+          </div>
+        </div>
+      </div>
+      <div class="row actuales">
+        <h2>Actuales</h2>
+        <div class="row objetos">
+          <div class="col claves" id="actualesLocal"></div>
+          <div class="col claves" id="actualesSesion"></div>
+          <div class="col claves" id="actualesCookies"></div>
+        </div>
+      </div>
+    </div>
+    <script src="local.js"></script>
+    <script src="session.js"></script>
+    <script src="cookies.js"></script>
+  </body>
+</html>

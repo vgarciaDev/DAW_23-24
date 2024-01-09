@@ -1,0 +1,32 @@
+.columna-1 {
+  background-color: #de6e4b;
+}
+
+.columna-2 {
+  background-color: #1a936f;
+}
+
+.columna-3 {
+  background-color: #7d1d3f;
+}
+
+.row {
+  color: #fff;
+}
+
+.row.actuales {
+  color: black;
+  background-color: #ffd972;
+}
+
+.row.objetos {
+  color: black;
+  width: 100%;
+  margin: 0;
+}
+
+.col.claves {
+  width: 80%;
+  margin-right: 5px;
+  background-color: rgb(255, 255, 255);
+}
