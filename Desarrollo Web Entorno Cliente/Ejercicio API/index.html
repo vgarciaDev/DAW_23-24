@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="mt-4">Buscador de Usuarios</h2>
+          <select class="form-select mt-2" name="genero" id="genero">
+            <option value="" disabled selected>Seleccione el Género</option>
+            <option value="female">Femenino</option>
+            <option value="male">Masculino</option>
+          </select>
+          <select class="form-select mt-2" name="pais" id="pais">
+            <option value="" disabled selected>Seleccione el País</option>
+            <option value="es">España</option>
+            <option value="au">Australia</option>
+            <option value="br">Brasil</option>
+            <option value="ca">Canadá</option>
+            <option value="dk">Dinamarca</option>
+            <option value="fr">Francia</option>
+            <option value="gb">Reino Unido</option>
+            <option value="mx">México</option>
+            <option value="us">Estados Unidos</option>
+            <option value="nz">Nueva Zelanda</option>
+          </select>
+          <input type="number" name="numero" id="numero" class="form-control mt-2" style="width: 100%" placeholder="Indica el número de resultados" />
+          <button class="btn btn-secondary mt-3" id="filtrar">Filtrar</button>
+        </div>
+        <div class="col">
+          <h2 class="mt-4">Detalles del Seleccionado</h2>
+          <div class="detalles"></div>
+        </div>
+      </div>
+      <h2 style="text-align: center">Resultados:</h2>
+      <div class="row resultados"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
