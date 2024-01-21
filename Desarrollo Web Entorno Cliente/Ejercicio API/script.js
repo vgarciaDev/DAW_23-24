@@ -21,6 +21,21 @@ window.addEventListener("load", () => {
         </div>
         </div>`;
     });
+    botonesPersona = document.querySelectorAll(".botonPersona");
+    botonesPersona.forEach((item, index) => {
+      item.addEventListener("click", () => {
+        detalles.innerHTML = `<div class="col mt-4">
+            <div class="card col" style="width: 25rem">
+            <img src='${res1.results[index].picture.large}' class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Nombre: ${res1.results[index].name.first} ${res1.results[index].name.last}</h5>
+              <h5 class="card-title">Email: ${res1.results[index].email}</h5>
+              <h5 class="card-title">Tel: ${res1.results[index].phone}</h5>
+            </div>
+            </div>
+            </div>`;
+      });
+    });
   });
 });
 
