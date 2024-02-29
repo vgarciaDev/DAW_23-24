@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./utils/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body>
+    <div class="row"></div>
+    <main class="container mt-3">
+      <h1>Tienda Online</h1>
+      <h3>Buscar</h3>
+      <div class="row">
+        <div class="col">
+          <label for="precio">Precio Mínimo: </label>
+          <input type="number" name="precio" id="precio" class="form-control" value="0" />
+        </div>
+        <div class="col">
+          <label for="categoria">Categoría: </label>
+          <select name="categoria" id="categoria" class="form-select">
+            <option value="" selected>Seleccione una categoría</option>
+            <option value="smartphones">Smartphones</option>
+            <option value="laptops">Portátiles</option>
+            <option value="fragrances">Perfumería</option>
+            <option value="skincare">Cuidado de la Piel</option>
+            <option value="groceries">Comida</option>
+            <option value="home-decoration">Hogar</option>
+          </select>
+        </div>
+        <div class="col">
+          <label for="marca">Marca: </label>
+          <select name="marca" id="marca" class="form-select"></select>
+        </div>
+        <div class="col-1 mt-4">
+          <button type="button" class="btn btn-primary" id="filtrar">Filtrar</button>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-9">
+          <h2>Resultados</h2>
+          <div class="row" id="resultados"></div>
+        </div>
+        <div class="col-3">
+          <h2 class="ms-3">Carrito</h2>
+          <h3 id="totalCarrito" class="ms-3">Total Carrito: 0€</h3>
+          <ul class="carrito ms-3"></ul>
+          <button type="button" class="btn btn-primary ms-3" id="comprar">Comprar</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./utils/script.js"></script>
+  </body>
+</html>
